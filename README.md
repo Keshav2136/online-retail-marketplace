@@ -18,7 +18,7 @@ Activate the virtual env.
  `source onlineretail-pipenv/bin/activate`
  `pip install -r requirements.txt`  
 
-    Runserver
+Runserver
 
   `python3 onlineretail/manage.py runserver`
 
