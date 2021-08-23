@@ -13,8 +13,14 @@ This way customers could shop online for apparels and try them inside the shop b
 **Databases:** *MongoDB* is used for storing sellers information, inventory and their location.  
  *MySQL* will be used for storing user credentials.
 
+
+
+    
+
   
-Activate the virtual env.  
+   Activate the virtual env.
+
+
  `source onlineretail-pipenv/bin/activate`
  `pip install -r requirements.txt`  
 
@@ -26,5 +32,7 @@ Runserver
 
    
 Tutorials watched while making this project:
+
+
   https://youtu.be/JxzZxdht-XY (2-hour complete tut. in Hindi)
   https://www.youtube.com/watch?v=jIqcPIEvQDA (Shorter English)
