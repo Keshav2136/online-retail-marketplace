@@ -6,9 +6,9 @@ This way customers could shop online for apparels and try them inside the shop b
 
 ## Tech Stack used:
 
-Front-end: Bulma.css and many copepen.io styles (commented with their links).
+**Front-end:** Jquery.js, Bulma.css and many copepen.io pens (commented with their links).
 
-Backend: Python, django.
+**Backend:** Python, django.
 
-Databases: MongoDB is used for storing sellers information, inventory and their location.
- MySQL will be used for storing user credentials.
+**Databases:** *MongoDB* is used for storing sellers information, inventory and their location. Djongo is used for connection.
+ *MySQL* will be used for storing user credentials.
