@@ -6,5 +6,5 @@ def index(request):
         "variable1":"Harry is great",
         "variable2":"Rohan is great"
     } 
-    return render(request, 'index.html', context)
+    return render(request, 'home.html', context)
     # return HttpResponse("this is homepage")
