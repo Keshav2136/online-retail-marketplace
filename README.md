@@ -13,7 +13,10 @@ This way customers could shop online for apparels and try them inside the shop b
 
 **Front-end:** Jquery.js, Bulma.css and many copepen.io pens (commented with their links).
 
-**Backend:** Python, django.
+**Backend:** Django.
+
+(currently not being used)
+
 
 **Databases:** *MongoDB* is used for storing sellers information, inventory and their location.  
  *MySQL* will be used for storing user credentials.
@@ -28,18 +31,19 @@ This way customers could shop online for apparels and try them inside the shop b
 ####       Activate the virtual env.
 
 
- `source onlineretail-pipenv/bin/activate`
+ `source onlineretail-env/bin/activate`
  
    
- `pip install -r requirements.txt`  
+ `pip3 install -r requirements.txt`  
 
 #### Runserver
 
   `python3 onlineretail/manage.py runserver`
 
 
+  .  
 
-   
+
 Tutorials watched while making this project:
 
 
@@ -47,3 +51,6 @@ Tutorials watched while making this project:
   
   
   https://www.youtube.com/watch?v=jIqcPIEvQDA (Shorter English)
+
+
+  https://youtu.be/heNu2sw9Yf4 (Django tutorial with Auth0)
