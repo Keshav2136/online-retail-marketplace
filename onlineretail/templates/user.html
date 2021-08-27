@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block body %}
-<!--    <title>Django Auth0 DEMO</title>-->
+{% block title %}Django Auth0 DEMO{% endblock title %}
     <div>
         {% if user.is_authenticated %}
             <a href="">Log Out</a>

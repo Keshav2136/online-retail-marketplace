@@ -1,4 +1,5 @@
 # Files to ignore, while pushing on GitHub
 
+onlineretail/.env
 *.env
 onlineretail-env/
