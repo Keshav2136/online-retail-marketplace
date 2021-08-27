@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--    <title>Django Auth0 DEMO</title>-->
+    <header>
+        {% if user.is_authenticated %}
+            <a href="">Log Out</a>
+            <a href="">Profile</a>
+        {% else %}
+            <a href="">Login</a>
+        {% endif %}
+    </header>
+
+{% endblock body %}
