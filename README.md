@@ -2,7 +2,7 @@
 
 A marketplace which brings the Indian local retail marketplaces online
 
-This way customers could shop online for apparels and try them inside the shop before buying. Making them tension-free that what they have bought will fit them easily.
+Select your apparels on your phone. Try in the shop, on a later date. Making customers tension-free that what they have bought will fit them easily.
 
 
   .
@@ -11,9 +11,9 @@ This way customers could shop online for apparels and try them inside the shop b
   
 ## Tech Stack used:
 
-**Front-end:** Jquery.js, Bulma.css and many copepen.io pens (commented with their links).
+**Front-end:** Jquery.js, Bulma and many copepen.io pens (commented with their links).
 
-**Backend:** Django.
+**Backend:** Python, Django.
 
 (currently not being used)
 
@@ -28,15 +28,26 @@ This way customers could shop online for apparels and try them inside the shop b
     
 ## How to use:
   
-####       Activate the virtual env.
+#### Enter into this github repo:
+
+`cd online-retail-marketplace`
 
 
+  Install virtualenv, Start a virtual env, Activate that virtual env. and install requirements.txt
+
+ `pip install virtualenv`
+ 
+ 
+ `virtualenv onlineretail-env`
+ 
+ 
  `source onlineretail-env/bin/activate`
  
    
  `pip3 install -r requirements.txt`  
 
 #### Runserver
+(straight from this github repo)
 
   `python3 onlineretail/manage.py runserver`
 
@@ -45,12 +56,13 @@ This way customers could shop online for apparels and try them inside the shop b
 
 
 Tutorials watched while making this project:
+  
+  
+  https://www.youtube.com/watch?v=jIqcPIEvQDA (Short tut. on getting started with Django)
+
+
+  https://youtu.be/heNu2sw9Yf4 (Integrating Django with Auth0 for login and user authentication)
 
 
   https://youtu.be/JxzZxdht-XY (2-hour complete tut. in Hindi)
   
-  
-  https://www.youtube.com/watch?v=jIqcPIEvQDA (Shorter English)
-
-
-  https://youtu.be/heNu2sw9Yf4 (Django tutorial with Auth0)
