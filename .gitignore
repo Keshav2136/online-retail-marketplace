@@ -4,3 +4,7 @@ onlineretail/.env
 *.env
 *.pyc
 onlineretail-env/
+onlineretail/user/__pycache__
+onlineretail/home/__pycache__
+onlineretail/onlineretail/__pycache__
+onlineretail/basic.mongodb
