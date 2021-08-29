@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/header-desktop.css' %}">
+
+	<script src="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.css" />
+	<script src="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth__en.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.css" />
+	<script src="node_modules/firebaseui/dist/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
+	
 </head> 
 <body>
     
@@ -123,6 +131,27 @@
 
 
 <!--Javascript goes here-->
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	const firebaseConfig = {
+	  apiKey: "AIzaSyCm8Eqzk8iLciEIZtLq5rgykopqsZFoKgs",
+	  authDomain: "onlineretail-firebase.firebaseapp.com",
+	  projectId: "onlineretail-firebase",
+	  storageBucket: "onlineretail-firebase.appspot.com",
+	  messagingSenderId: "246779660428",
+	  appId: "1:246779660428:web:da3f110a0c739f028dd3a9"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+  </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="{% static 'js/header-desktop.js' %}"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
