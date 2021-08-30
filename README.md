@@ -65,4 +65,7 @@ Tutorials watched while making this project:
 
 
   https://youtu.be/JxzZxdht-XY (2-hour complete tut. in Hindi)
+<<<<<<< HEAD
   
+=======
+>>>>>>> main
