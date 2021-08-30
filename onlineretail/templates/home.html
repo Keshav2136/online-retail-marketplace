@@ -1,13 +1,7 @@
 {% extends 'base.html' %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-    {% load static %}
-    <title>{% block title %}India's Online Retail Marketplace{% endblock title %}</title>
-</head> 
-<body>
-    
+  {% block title %}India's Online Retail Marketplace{% endblock title %}
+  {% block body %}
     <div id="container">
         <h3>FirebaseUI Demo</h3>
         <div id="loading">Loading...</div>
@@ -70,6 +64,4 @@
           </div>
         </div>
       </div>
-
-</body>
-</html>
+  {% endblock body %}

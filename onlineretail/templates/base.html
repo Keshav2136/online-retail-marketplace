@@ -8,16 +8,13 @@
     <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/header-desktop.css' %}">
 
-	<script src="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.css" />
+	<!--Firebase Web Installation through CDN-->
 	<script src="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth__en.js"></script>
 	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/5.0.0/firebase-ui-auth.css" />
-	<script src="node_modules/firebaseui/dist/firebaseui.js"></script>
-	<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
-	
+
 </head> 
 <body>
-    
+
 
 
     <header role="banner">
@@ -125,12 +122,15 @@
 
 
 
-	{% block body %}
-	{% endblock body %}
+
+{% block body %}
+{% endblock body %}
 
 
 
-<!--Javascript goes here-->
+
+<!--Javascript goes here:
+	 Firebase, Supabase initialize code and API keys-->
 
 <script type="module">
 	// Import the functions you need from the SDKs you need
@@ -154,14 +154,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="{% static 'js/header-desktop.js' %}"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script type="text/javascript">
 import { createClient } from '@supabase/supabase-js'
 
 // Create a single supabase client for interacting with your database 
 const supabase = createClient("https://xyzcompany.supabase.co", "public-anon-key")
 </script>
-
+-->
 </body>
 </html>

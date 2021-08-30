@@ -13,3 +13,4 @@ onlineretail/basic.mongodb
 yes
 .firebaserc
 firebase.json
+onlineretail/templates/base.html
