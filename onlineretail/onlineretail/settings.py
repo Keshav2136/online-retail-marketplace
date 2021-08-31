@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'social_django',
-    'bulma',
     'home',
-    'user'
+    'user',
+    'bulma',
+    'social_django'
 ]
 
 SOCIAL_AUTH_TRAILING_SLASH=False

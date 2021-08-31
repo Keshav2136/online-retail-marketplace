@@ -16,3 +16,4 @@ firebase.json
 onlineretail/templates/base.html
 onlineretail/static/secrets
 Procfile
+onlineretail/onlineretail/__pycache__/
