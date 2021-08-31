@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 <<<<<<< HEAD
+<<<<<<< HEAD
 {% block title %}Django Auth0 DEMO{% endblock title %}
 
 {% block body %}
@@ -8,15 +9,25 @@
 {% block title %}Django Auth0 DEMO{% endblock title %}
 >>>>>>> main
     <div>
+=======
+{% block body %}
+<!--    <title>Django Auth0 DEMO</title>-->
+    <header>
+>>>>>>> 0c0312f (Fixed template (added user.html and changed user.urls),   previously changed template dir to root)
         {% if user.is_authenticated %}
             <a href="">Log Out</a>
             <a href="">Profile</a>
         {% else %}
             <a href="">Login</a>
         {% endif %}
+<<<<<<< HEAD
     </div>
 <<<<<<< HEAD
 =======
 
 >>>>>>> main
+=======
+    </header>
+
+>>>>>>> 0c0312f (Fixed template (added user.html and changed user.urls),   previously changed template dir to root)
 {% endblock body %}

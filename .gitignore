@@ -14,3 +14,4 @@ yes
 .firebaserc
 firebase.json
 onlineretail/templates/base.html
+onlineretail/static/secrets
