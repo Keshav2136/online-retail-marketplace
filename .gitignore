@@ -1,0 +1,16 @@
+# Files to ignore, while pushing on GitHub
+
+onlineretail/.env
+*.env
+*.pyc
+onlineretail-env/
+onlineretail/user/__pycache__
+onlineretail/home/__pycache__
+onlineretail/onlineretail/__pycache__
+onlineretail/basic.mongodb
+.github/workflows
+.firebase
+yes
+.firebaserc
+firebase.json
+onlineretail/templates/base.html
