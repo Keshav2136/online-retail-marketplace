@@ -13,12 +13,9 @@ Select your apparels on your phone. Try in the shop, on a later date. Making cus
 
 **Front-end:** Jquery.js, Bulma and many copepen.io pens (commented with their links).
 
-**Backend:** Python, Django.
+**Backend:** Python, Django and Firebase.
 
-(currently not being used)
-
-
-**Databases:** *MongoDB* is used for storing sellers information, inventory and their location.  
+(currently not being used)  **Databases:** *MongoDB* is used for storing sellers information, inventory and their location.  
  *MySQL* will be used for storing user credentials.
 
 
