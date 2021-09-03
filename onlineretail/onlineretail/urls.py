@@ -25,5 +25,6 @@ admin.site.index_title = "Welcome to Online Retail"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('user/', include('user.urls'))
+    path('user/', include('user.urls')),
+    path('login_success/', include('user.urls'), name="login_success")
 ]
