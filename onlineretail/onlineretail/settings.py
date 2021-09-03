@@ -66,6 +66,7 @@ AUTHENTICTION_BACKENDS={
 }
 
 MIDDLEWARE = [
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -158,8 +159,4 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, "static")
 ]
 
-
-
-LOGIN_URL='/login/auth0'
-LOGIN_REDIRECT='/'
-LOGOUT_REDIRECT_URL='/'
+APPEND_SLASH=False
