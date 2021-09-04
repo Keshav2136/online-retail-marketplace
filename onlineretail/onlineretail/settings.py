@@ -66,6 +66,7 @@ AUTHENTICTION_BACKENDS={
 }
 
 MIDDLEWARE = [
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -73,6 +74,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.template.context_processors.debug',
+    'django.template.context_processors.request',
 ]
 
 ROOT_URLCONF = 'onlineretail.urls'
@@ -158,8 +161,4 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, "static")
 ]
 
-
-
-LOGIN_URL='/login/auth0'
-LOGIN_REDIRECT='/'
-LOGOUT_REDIRECT_URL='/'
+APPEND_SLASH=False
