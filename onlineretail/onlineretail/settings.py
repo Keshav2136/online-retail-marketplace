@@ -30,7 +30,11 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '192.168.43.17'
+    '0.0.0.0',
+    '192.168.43.17',
+    'www.fpvlife.in', # My website
+    'fpvlife.in',
+    'd9c3-2409-4050-e09-29d0-618f-86fd-c074-93a9.ngrok.io' # Ngrok I used to make my localhost site to public
 ]
 
 
