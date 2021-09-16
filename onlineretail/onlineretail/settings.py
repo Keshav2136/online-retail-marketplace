@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     '192.168.43.17',
     'www.fpvlife.in', # My website
     'fpvlife.in',
-    'd9c3-2409-4050-e09-29d0-618f-86fd-c074-93a9.ngrok.io' # Ngrok I used to make my localhost site to public
+    'd9c3-2409-4050-e09-29d0-618f-86fd-c074-93a9.ngrok.io' # Portforwarding to Ngrok to make my localhost site to open to public
 ]
 
 
@@ -47,11 +47,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'authemail',
     'home',
     'user',
     'bulma',
     'social_django'
 ]
+
+AUTH_USER_MODEL = 'user.MyUser'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 
 SOCIAL_AUTH_TRAILING_SLASH=False
 SOCIAL_AUTH_AUTH0_DOMAIN=config('APP_DOMAIN')
@@ -107,8 +118,12 @@ WSGI_APPLICATION = 'onlineretail.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '5432'
     }
 }
 
